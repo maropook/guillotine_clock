@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request
 from cron import cron
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./static')
 
 
 # ブラウザに画面を表示

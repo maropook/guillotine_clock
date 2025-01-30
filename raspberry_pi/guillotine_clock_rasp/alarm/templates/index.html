@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>ギロチン時計</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+
 </head>
+
 <body>
-    <h2>朝起きる時間をセットしてください</h2>
-    <p>{{alarm_time}}</p>
+   <img src="static/images/title.png">
+   <h2>朝起きる時間をセットしてください</h2>
+   <p>{{alarm_time}}</p>
    <form action="/" method="POST" enctype="multipart/form-data">
       <div>
          <input type="time" name="alarm_time" value="06:00">
@@ -15,4 +22,5 @@
    </form>
 
 </body>
+
 </html>
